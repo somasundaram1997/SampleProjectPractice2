@@ -19,8 +19,15 @@ public class SampleGit {
 		WebElement txtPassword = driver.findElement(By.id("pass"));
 		txtPassword.sendKeys("989898");
 		
-		WebElement btnLogin = driver.findElement(By.name("login"));
-		btnLogin.click();
+		WebElement txtUsername4 = driver.findElement(By.xpath("//input[@type='text']"));
+		txtUsername.sendKeys("somasundaram@gamil.com");
+		String text1 = txtUsername4.getAttribute("value");
+		System.out.println(text1);
+		
+		WebElement txtPassword4 = driver.findElement(By.xpath("//input[@type='password']"));
+		txtPassword.sendKeys("123456789!");
+		String text3 = txtPassword4.getAttribute("value");
+		System.out.println(text3);
 		
 		WebElement txtUsername1 = driver.findElement(By.xpath("//input[@type='text']"));
 		txtUsername.sendKeys("somasundaram@gamil.com");
@@ -33,7 +40,7 @@ public class SampleGit {
 		System.out.println(text2);
 		
 		WebElement btn2 = driver.findElement(By.name("login"));
-		btnLogin.click();
+		btn2.click();
 
 		
 	}
