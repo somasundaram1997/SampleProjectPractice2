@@ -33,7 +33,7 @@ public class SampleGit {
 		System.out.println(text2);
 		
 		WebElement btn2 = driver.findElement(By.name("login"));
-		btnLogin.click();
+		btn2.click();
 
 		
 	}
