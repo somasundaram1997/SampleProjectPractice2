@@ -28,6 +28,19 @@ public class SampleGit {
 		txtPassword.sendKeys("123456789!");
 		String text3 = txtPassword4.getAttribute("value");
 		System.out.println(text3);
+		
+		WebElement txtUsername1 = driver.findElement(By.xpath("//input[@type='text']"));
+		txtUsername.sendKeys("somasundaram@gamil.com");
+		String text = txtUsername.getAttribute("value");
+		System.out.println(text);
+		
+		WebElement txtPassword1 = driver.findElement(By.xpath("//input[@type='password']"));
+		txtPassword.sendKeys("123456789!");
+		String text2 = txtPassword.getAttribute("value");
+		System.out.println(text2);
+		
+		WebElement btn2 = driver.findElement(By.name("login"));
+		btn2.click();
 
 		
 	}
