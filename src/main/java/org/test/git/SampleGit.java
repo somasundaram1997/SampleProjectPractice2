@@ -20,7 +20,7 @@ public class SampleGit {
 		txtPassword.sendKeys("989898");
 		
 		WebElement btnLogin = driver.findElement(By.name("login"));
-		btnLogin.click();
+		btnLogin.click();           
 		
 		WebElement txtUsername1 = driver.findElement(By.xpath("//input[@type='text']"));
 		txtUsername.sendKeys("somasundaram@gamil.com");
