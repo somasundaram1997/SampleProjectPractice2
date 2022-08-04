@@ -22,13 +22,13 @@ public class SampleGit {
 		WebElement btnLogin = driver.findElement(By.name("login"));
 		btnLogin.click();
 		
-		WebElement txtUsername2 = driver.findElement(By.id("email"));
+		WebElement txtUser2 = driver.findElement(By.id("email"));
 		txtUsername.sendKeys("sunadarm");
 		
-		WebElement txtPassword2 = driver.findElement(By.id("pass"));
+		WebElement txtPass2 = driver.findElement(By.id("pass"));
 		txtPassword.sendKeys("989898");
 		
-		WebElement btnLogin2 = driver.findElement(By.name("login"));
+		WebElement btn2 = driver.findElement(By.name("login"));
 		btnLogin.click();
 
 		
